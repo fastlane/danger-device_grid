@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Felix Krause', 'Boris Bügling']
   spec.email         = ['danger@krausefx.com', 'boris@icculus.org']
   spec.summary       = %q{Danger plugin for the fastlane device grid.}
-  spec.homepage      = 'https://github.com/fastlane/fastlane/tree/master/danger-device_grid'
+  spec.homepage      = 'https://github.com/fastlane/danger-device_grid'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency "fastlane", ">= 1.111.0", "< 2.0.0"
+  spec.add_dependency "fastlane", ">= 2.0.0", "< 3.0.0"
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake', '< 12'
