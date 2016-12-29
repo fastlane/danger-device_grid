@@ -15,7 +15,7 @@ module Danger
       fastlane_colors_were_disabled = ENV.key?(fastlane_colors_env)
       ENV[fastlane_colors_env] = "true"
 
-      devices ||= %w(iphone4s iphone5s iphone6s iphone6splus ipadair)
+      devices ||= %w(iphone4s iphone5s iphone6s iphone7 iphone6splus iphone7plus ipadair)
       languages ||= ["en"]
 
       prefix_command ||= ""
@@ -75,7 +75,9 @@ module Danger
         iphone6splus: "iPhone 6s Plus",
         ipadair: "iPad Air",
         iphone6: "iPhone 6",
+        iphone7: "iPhone 7",
         iphone6plus: "iPhone 6 Plus",
+        iphone7plus: "iPhone 7 Plus",
         ipadair2: "iPad Air 2",
         nexus5: "Nexus 5",
         nexus7: "Nexus 7",
@@ -90,8 +92,10 @@ module Danger
         iphone4s: host + "iphone4s.png",
         iphone5s: host + "iphone5s.png",
         iphone6: host + "iphone6s.png",
+        iphone7: host + "iphone6s.png",
         iphone6s: host + "iphone6s.png",
         iphone6plus: host + "iphone6splus.png",
+        iphone7plus: host + "iphone6splus.png",
         iphone6splus: host + "iphone6splus.png",
         ipadair: host + "ipadair.png",
         ipadair2: host + "ipadair.png"
